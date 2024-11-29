@@ -1,0 +1,5 @@
+FROM eclipse-temurine:17-jdk-alpine
+WORKDIR /app
+COPY target/applicationYoutube.jar applicationYoutube.jar
+EXPOSE 8080
+CMD ["JAVA","-JAR","applicationYoutube.jar"]
